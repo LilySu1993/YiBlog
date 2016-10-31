@@ -1,0 +1,25 @@
+
+{% extends "blog/base.html" %}
+{% load staticfiles %}
+{% block extracss %} 
+<link href="{% static '../../static/css/about.css' %}" rel="stylesheet" /> 
+{% endblock %}
+{% block content %}
+	 <div class="about">
+      <h2>Just about me</h2>
+      <ul>
+        <p>苏小乙（化名），女...</p>
+        <p> </p>
+        <p></p>
+        <p>  </p>
+      </ul>
+      <h2>About my blog</h2>
+      <ul class="blog_a">
+        <p>该版本版本号为V0.3，由于时间有限，目前只支持纯文本的博客（但是可以上传图片），后期将增加更多功能，如添加日志系统、添加注册功能、添加代码编辑提交功能、实现多语版本。</p>
+        <p>该博客系统的开发及部署环境信息：</p>
+        <p>语言：Python 2.7 Django 1.4 MySQL 5.5 </p>
+        <p>暂时部署到新浪SAE，后期将使用SSH框架实现Java版本，并部署到阿里云服务器上。</p>
+      </ul>
+    </div>
+{% endblock %}
+
